@@ -1,0 +1,61 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot');
+	src:url('fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('fonts/icomoon.woff') format('woff'),
+		url('fonts/icomoon.ttf') format('truetype'),
+		url('fonts/icomoon.svg#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-otro_icn:before {
+	position: relative;
+	top: -4px;
+	content: "\e602";
+	color:#6403e2;
+}
+.icon-expo_icn:before {
+	position: relative;
+	top: -4px;
+	content: "\e603";
+	color:#46a2da;
+}
+.icon-clima_icn:before {
+	position: relative;
+	top: -4px;
+	content: "\e604";
+	color:#bababa;
+}
+.icon-alerta_icn:before {
+	position: relative;
+	top: -4px;
+	content: "\e605";
+	color:#ff0062;
+}
+.icon-show_icn:before {
+	position: relative;
+	top: -4px;
+	content: "\e601";
+	color:#5d2be0;
+}
+.icon-tendencia_icn:before {
+	position: relative;
+	top: -4px;
+	content: "\e600";
+	color:#4e7adc;
+}

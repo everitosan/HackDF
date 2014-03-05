@@ -1,0 +1,392 @@
+@import url('../icn/style.css');
+/* make keyframes that tell the start state and the end state of our object */
+@-webkit-keyframes fadeOut { from { opacity:1; } to { opacity:0; } }
+@-moz-keyframes fadeOut { from { opacity:1; } to { opacity:0; } }
+@keyframes fadeOut { from { opacity:1; } to { opacity:0; } }
+
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+
+
+/* SCROLL*/
+ 
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+@font-face{
+font-family: Kenso;
+src: url(../font/kenso.otf);
+}
+
+html{
+
+}
+body{
+margin:0px;
+
+    
+}
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    
+}
+
+#inicio{
+    background-color: #0F0E0F;
+    height: 200px;
+    width: auto;
+    z-index: 90000;
+    position: fixed;
+    padding-top: 300px;
+
+
+
+}
+
+.back{
+    background:  url('../img/logo.png') no-repeat, #0F0E0F;
+    background-position: center;
+    background-size: 50%, auto;
+    height: 100%;
+    padding-top: 10%;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    z-index: 9000000;
+}
+
+.line{
+    height: .8px;
+    padding-bottom: 16px;
+        
+
+}
+.perfil{
+    padding-top: 30px;
+    font-size: 13px;
+
+}
+#portada{
+   
+    background-color: #747575;
+    height:100%;
+    width:100%;
+    z-index: -1;
+    position: absolute;
+}
+
+#wrap
+{
+    transition: .4s linear all;
+    width: 600px;
+    height: 100%;
+    position: fixed;
+    right: -350px;
+}
+#detalle{
+    overflow-x: hidden;
+    display: inline-block;
+    vertical-align: top;
+    width: 350px;
+    
+}
+
+
+.lista{    
+    display: inline-block;
+    vertical-align: top;
+    width:250px;
+    height: 100%;
+    background-color:#141414;
+    z-index:20;
+    text-align: center;
+    font-family: Kenso;
+    color: #D8D8D8;
+    letter-spacing: 3px;
+    overflow-y: scroll;
+}
+.bar{
+    width:19px;
+    height:100%;
+    background-image: url('../img/bar.png');
+    position:fixed;
+    z-index:800;
+    text-align: center;
+    font-size: 40px;
+    text-align: middle;
+    padding-top: 25%;
+    
+        
+    
+}
+.cont_list{
+    padding: 8px 16px;
+
+
+}
+.titulo_l, .titulo_l a{
+    
+    font-size: 17px;
+    color: #D8D8D8;
+    letter-spacing: 1px;
+    
+}
+
+.icono{
+    display: inline-block;
+    padding-right: 5px;
+    padding-top: 4px;
+    font-size: 1.3em;
+}
+
+.t{
+    position: relative;
+    top: -8px;
+}
+
+
+#fotoperfil
+{
+    border-radius: 50%;
+    background: #fff;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+}
+
+#bar{
+    transition: .4s linear all;
+}
+
+.museo .icono:after
+{
+    content: "m";
+}
+
+
+/* ---------------------------CONTENIDO------------------------------------ */
+
+
+
+
+
+.lista2{    
+
+opacity:1;  /* make things invisible upon start */
+    -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+    -moz-animation:fadeIn ease-in 1;
+    animation:fadeIn ease-in 1;
+ 
+    -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+ 
+    -webkit-animation-duration:.5s;
+    -moz-animation-duration:.5s;
+    animation-duration:.5s;
+
+
+
+
+
+    right:0px;
+    position:fixed;
+    width:350px;
+    height:100%;
+    background-color:#141414;
+    z-index:20;
+    text-align: left;
+    font-family: Kenso;
+    color: #D8D8D8;
+    letter-spacing: 3px;
+    
+}
+
+.bar2{
+    width:19px;
+    height:100%;
+    background-image: url('../img/bar.png');
+    position:fixed;
+    right:350px;
+    z-index:30;
+    text-align: center;
+    font-size: 40px;
+    text-align: middle;
+    padding-top: 25%;
+    
+        
+    
+}
+
+.foto{
+
+    width: 350px;
+    height: 200px;   
+}
+
+.foto img{
+    
+}
+.contenido{
+    margin-left: 10px;
+    padding-top: 10px;
+       
+}
+.titulo{
+    font-size: 20px;
+}
+.texto{
+    font-size: 12px;
+    font-family: Helvetica;
+    color: #4C4A4E;
+
+}
+
+.texto2{
+    font-size: 12px;
+    font-family: Helvetica;
+    color: #8f5fce;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.line2{
+    padding-left: 70px;
+}
+
+/* ---------------------------CONTENIDO------------------------------------ */
+
+
+
+/* ---------------------------CONTENIDO------------------------------------ */
+
+
+
+
+
+.detalle{    
+
+opacity:1;  /* make things invisible upon start */
+    -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+    -moz-animation:fadeIn ease-in 1;
+    animation:fadeIn ease-in 1;
+ 
+    -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+ 
+    -webkit-animation-duration:.5s;
+    -moz-animation-duration:.5s;
+    animation-duration:.5s;
+
+
+
+
+
+    right:0px;
+    position:absolute;
+    width:350px;
+    height:100%;
+    background-color:#141414;
+    z-index:20;
+    text-align: left;
+    font-family: Kenso;
+    color: #D8D8D8;
+    letter-spacing: 3px;
+    overflow-y: scroll;
+
+    
+}
+
+#back{
+    background: url('../img/icn_btn.png') no-repeat;
+    background-size: 100%;
+    background-position: center;  
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+}
+
+
+
+#alert
+{
+    font-family: verdana, sans;
+    position: absolute;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.8);
+    text-align:  center;
+}
+
+#alert h2
+{
+    background: rgba(255,255,255,1);
+     width: 300px;
+    margin: 0 auto;
+}
+#alert p
+{
+    width: 300px;
+    margin: 0 auto;
+    background: rgba(255,255,255,.6);
+}
+
+#closealerta
+{
+    cursor: pointer;
+    background: #000;
+    margin: 0 auto;
+    box-shadow: 1px 1px 2px #333;
+    width: 300px;
+    color: white;
+}
+
+/* ---------------------------CONTENIDO------------------------------------ */
+
+@media only screen and (max-width:500px){
+#wrap
+{
+    right: -581px;
+}
+
+#back{
+    display: block;
+}
+  }
+
+  /*------------------JS---------------------*/
+ ul#photos{overflow:hidden; margin:0; padding:0;}
+        ul#photos li{overflow:hidden; width: 100%; height: auto; float:left; list-style-type:none; }
+        ul#photos li img{}
+
+        ul{
+            list-style-type: none;
+            margin:0px;
+        }
+#tips li {
+    padding-bottom: 10px;
+    list-style-type: none;
+    border-bottom: 1px solid;
+    padding-top: 5px;
+
+
+}
+
